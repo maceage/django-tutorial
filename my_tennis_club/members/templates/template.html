@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <body>
-    {% with firstname='Tobias' %}
-    <h1>Hello {{ firstname }}, how are you?</h1>
-    {% endwith %}
+    {% for x in members %}
+        <li>{{ x.firstname }}</li>
+    {% endfor %}
 </body>
 </html>
