@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <body>
-    {% for x in members %}
-        <li>{{ x.firstname }}</li>
-    {% endfor %}
+    {% if greeting == 1 %}
+        <h1>Hello</h1>
+    {% else %}
+        <h1>Bye</h1>
+    {% endif %}
 </body>
 </html>
