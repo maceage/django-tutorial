@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <body>
+    <h1>Welcome Everyone</h1>
+    {% comment "this was the original welcome message" %}
+        <h1>Welcome ladies and Gentlemen</h1>
+    {% endcomment %}
+
     <ul>
       {% for x in members %}
         <li>{{ x.firstname }}</li>
