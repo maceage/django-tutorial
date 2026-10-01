@@ -1,12 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<body>
+{% extends 'master.html' %}
+
+{% block title %}
+    My Tennis Club - List of all members
+{% endblock %}
+
+{% block content %}
     <h1>Members</h1>
 
     <ul>
-        {% for member in members %}
-            <li>{{ member.firstname }} {{ member.lastname }}</li>
+        {% for x in members %}
+            <li><a href="details/{{ x.id }}">{{ x.firstname }} {{ x.lastname }}</a></li>
         {% endfor %}
     </ul>
-</body>
-</html>
+{% endblock %}
